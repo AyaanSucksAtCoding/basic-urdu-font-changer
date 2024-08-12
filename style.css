@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notonaskharabic.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Noto Naskh Arabic', 'poppins';
+    font-size: 1.5em;
+    direction: rtl;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(to right, #f2c94c, #f2994a);
+    padding: 20px; /* Added for better spacing on smaller screens */
+}
+
+.urdu {
+    text-align: center;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+}
+
+input {
+    padding: 10px;
+    font-size: 1em;
+    width: 100%; /* Adjust to take full width available */
+    max-width: 300px;
+    box-sizing: border-box; /* Ensures padding doesn't exceed width */
+}
+
+select {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1em;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: black;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+/* Media Queries for different screen sizes */
+@media (max-width: 768px) {
+    body {
+        font-size: 1.2em;
+    }
+
+    input, select {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 1em;
+    }
+
+    input, select {
+        font-size: 0.9em;
+    }
+}
